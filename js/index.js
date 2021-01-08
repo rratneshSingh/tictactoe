@@ -28,10 +28,8 @@ function updateTab(id) {
     if (count > 4) {
         setTimeout(function () {
             if (checkWinCondition(currSign)) {
-                var restart = confirm(sign[currSign] + ' Wins. Restart ?');
-                if (restart) {
-                    reset();
-                }
+                alert(sign[currSign] + ' Wins.');
+                reset();
             } else if (count === 9) {
                 var restart = confirm('Match draw. Restart ?');
                 if (restart) {
